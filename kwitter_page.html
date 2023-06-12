@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <button id="logout" class="glyphicon glyphicon-log-out btn" onclick="logout()">Logout</button>
+				<center>
+					<h1 class="header">	
+						Comeso's talk
+						<sup>
+							<img class="card" src="card.png">
+						</sup>
+					</h1>
+        <div id="output"></div>
+
+    </div><br>
+        
+
+        <div class="inputDivMessagePage">
+            <label>Escreva sua mensagem:</label>
+            <input type="text" id="msg" class="form-control" placeholder="Mensagem">
+            <button onclick="send()" class="btn btn-success">Enviar</button>
+        </div>
+    
+   
+    
+        <script src="kwitter_page.js"></script>
+</body>
+</html>
